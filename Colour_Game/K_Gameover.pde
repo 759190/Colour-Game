@@ -1,6 +1,6 @@
 void gameover() {
   background(0);
-  x=140; //reset timer
+  t=140; //reset timer
   
   //Game over text
   fill(255,0,0);
@@ -23,7 +23,7 @@ void gameover() {
 
 void gameoverClicks() {
   mode=INTRO;
-  score=0;
+  score=0; //reset score
 
 }
 

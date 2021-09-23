@@ -35,10 +35,10 @@ rectMode(CENTER);
 stroke(255,0,0);
 strokeWeight(3);
 fill(0);
-rect(width/2,500,x,20);
+rect(width/2,500,t,20);
 //timer if statement
-x=x-2;
-if (x<0) {
+t=t-2;
+if (t<0) {
   mode=GAMEOVER;
 }
 //for 50% chance //-----------------------------------
@@ -54,7 +54,7 @@ if (mouseX>0&&mouseX<300&&mouseY>0&&mouseY<700 && match==true) {
   score=score+1; // if matched
 w=int(random(0,6)); 
 c= int(random(0,6));
-x=140; //reset timer
+t=140; //reset timer
 
 } else if (mouseX>0&&mouseX<300&&mouseY>0&&mouseY<700 && match==false){
  mode=GAMEOVER; // if not matched
@@ -69,6 +69,6 @@ fifty= int(random(0,2)); //50% chance of match
 score=score+1; // if not matched
 w=int(random(0,6)); 
 c= int(random(0,6)); 
-x=140; //reset timer
+t=140; //reset timer
 }
 } //end
